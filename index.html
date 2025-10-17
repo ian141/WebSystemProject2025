@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Balce - Creative Portfolio</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body data-theme="light">
+     Glitter Container 
+    <div class="glitter-container" id="glitterContainer"></div> 
+
+    <!-- Bird Container -->
+    <div class="bird-container" id="birdContainer">
+        <div class="realistic-bird" id="realisticBird">
+            <div class="bird-tail"></div>
+            <div class="bird-wing-left"></div>
+            <div class="bird-body"></div>
+            <div class="bird-wing-right"></div>
+            <div class="bird-head"></div>
+            <div class="bird-eye"></div>
+            <div class="bird-beak"></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="#home" class="logo" id="logoText">Ian Balce</a>
+                <button class="color-toggle" id="colorToggle" title="Toggle Glitter Rain">
+                    <i class="fas fa-lightbulb"></i>
+                </button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <button class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1><span class="typewriter" id="typewriter"></span></h1>
+                <p class="hero-tagline">I'm a <span class="highlight">Web Developer</span></p>
+                <p class="hero-description">I am a 3rd-year Bachelor of Science in Information Systems student at Camarines Norte State College, passionate about creating meaningful digital experiences through innovative and user-centered solutions.</p>
+                <div class="cta-buttons">
+                    <a href="https://ian141.github.io/resume/" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-alt"></i>
+                        View My CV
+                    </a>
+                    <div class="social-icons">
+                        <a href="https://github.com/ian141" class="social-icon" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ian-jay-balce-044265352/" class="social-icon" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/Balceian17/photo" class="social-icon twitter-icon" id="twitterIcon" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ianjay.balce.vinzons.bicol" class="social-icon" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <div class="circle-border"></div>
+                    <img src="images/home.png" alt="Profile Picture" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Passionate about creating meaningful digital experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about.png" alt="About me">
+                </div>
+                <div class="about-text">
+                    <h3>Creative Developer with a Passion for Innovation</h3>
+                    <p>I am a 3rd-year Bachelor of Science in Information Systems (BSIS) student at Camarines Norte State College, passionate about creating meaningful digital experiences through innovative and user-centered solutions. With strong skills in front-end development, web design, and problem-solving, I enjoy turning ideas into interactive and visually appealing projects.</p>
+                    <p>Beyond coding, I am eager to expand my knowledge in systems analysis, database management, and emerging technologies to prepare for future roles in the IT industry. I value collaboration, continuous learning, and applying my technical expertise to real-world challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="section" id="portfolio" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <p>A showcase of my recent projects and creative work</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/PassCSEApp.png" alt="Pass CSE Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ian141.github.io/PassCSE-Civil-Service-Application/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ian141" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pass CSE Application</h3>
+                        <p>A collaborative task management application with real-time updates and team features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/LihamV2.png" alt="Liham Cafe Website V2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ian141.github.io/Liham-Cafe-V.2/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ian141" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Liham Cafe Website V2</h3>
+                        <p>Interactive dashboard for data analytics with beautiful charts and real-time insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/lihamV1.png" alt="Liham Cafe Website V1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ian141.github.io/Liham-Cafe-V.1/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ian141" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Liham-Cafe Website.V.1</h3>
+                        <p>Modern and elegant website for a local cafe featuring menu showcase, online ordering system, and reservation management.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/portfolio.png" alt="Personal Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/ian141" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>Creative portfolio showcasing projects with modern design and smooth animations.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section class="section" id="certificates">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certificates & Achievements</h2>
+                <p>Professional certifications and completed courses</p>
+            </div>
+            <div class="certificate-grid">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="images/BITSCON.png" alt="BITSCON 2024">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>BITSCON 2024</h3>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> Tech Conference</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-map-marker-alt"></i>CNSC Covered Court</span>
+                        </div>
+                        <p>The BITSCON 2024, with the theme "𝑫𝒊𝒈𝒊𝒕𝒂𝒍 𝑯𝒐𝒓𝒊𝒛𝒐𝒏: 𝑵𝒂𝒗𝒊𝒈𝒂𝒕𝒊𝒏𝒈 𝒕𝒉𝒆 𝑭𝒖𝒕𝒖𝒓𝒆 𝒐𝒇 𝑻𝒆𝒄𝒉𝒏𝒐𝒍𝒐𝒈𝒚", starts today!
+                             The Computing Society, along with the bona fide students of the College of Information and Communications Technology who registered, attended the said event at Camarines Norte State College in Daet, Camarines Norte. As they join BITSCON 2024, they begin a journey to discover and explore, where they exchange ideas, collaborate, and gain knowledge from the experts in information technology. 
+                             The event is just getting started. Stay tuned to witness the exciting lineup of the event on day two of BITSCON 2024! </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="images/NSTP.png" alt="UI/UX Design Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>National Service Training Program</h3>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> NSTP Training</span>
+                            <span><i class="fas fa-calendar"></i> October 28, 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i>CNSC Covered Court</span>
+                        </div>
+                        <p>National Service Training Program<br>The National Service Training Program (NSTP) is a civic education and defense preparedness program for students in the Philippines, established by the government on November 13, 2009, under Republic Act No. 9163. Its primary aim is to enhance civic consciousness and defense preparedness among the youth, promoting service ethics and patriotism through various training components. NSTP originated from the National Defense Act of 1935 and has evolved to foster nationalism and service among Filipino youth.</p>
+                        <div class="project-tags">
+                            <span class="tag">Republic Act. No 9163 (NSTP Act 2001)</span>
+                            <span class="tag">Reserve Officers’ Training Corps (ROTC)</span>
+                            <span class="tag">Literacy Training Service (LTS)</span>
+                            <span class="tag">Civic Welfare Training Service (CWTS)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="images/deanslister.png" alt="JavaScript Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Certificate of Recognition</h3>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i>Deans Lister</span>
+                            <span><i class="fas fa-calendar"></i>2024-2025</span>
+                            <span><i class="fas fa-map-marker-alt"></i>CNSC Covered Court</span>
+                        </div>
+                        <p>Given date 19th of june 2025 at Camarines Norte State College, Daet, Camarines Norte.</p>
+                     <!--   <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">ES6</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience & Education</h2>
+                <p>My professional journey and educational background</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3 class="timeline-title">BSIS Student</h3>
+                        <p class="timeline-company">Camarines Norte State College</p>
+                        <p class="timeline-description">Currently pursuing Bachelor of Science in Information Systems. Focusing on web development, database management, and systems analysis.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <p class="timeline-company">Freelance Projects</p>
+                        <p class="timeline-description">Developed responsive web applications and collaborated with design teams to create exceptional user experiences.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <p class="timeline-company">Creating Website</p>
+                        <p class="timeline-description">Developed responsive website "Liham Cafe" in Vinzons Camarines Norte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section" id="skills" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills & Expertise</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-js-square skill-icon" style="color: #f7df1e;"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react skill-icon" style="color: #61dafb;"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js skill-icon" style="color: #68a063;"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-vuejs skill-icon" style="color: #42b883;"></i>
+                        <p>Vue.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-php skill-icon" style="color: #777bb4;"></i>
+                        <p>PHP</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-icon" style="color: #00758f;"></i>
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt skill-icon" style="color: #f05032;"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-figma skill-icon" style="color: #f24e1e;"></i>
+                        <p>Figma</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush skill-icon" style="color: #ff61f6;"></i>
+                        <p>UI/UX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss your next project or collaboration</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ianjaybalce17@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+6391091227272</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Vinzons Camarines Norte</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://x.com/Balceian17/photo" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ian-jay-balce-044265352/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/ian141" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ianjay.balce.vinzons.bicol" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://x.com/Balceian17/photo" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ian-jay-balce-044265352/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/ian141" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ianjay.balce.vinzons.bicol" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ian Jay Balce. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Typewriter Effect
+        const typewriterElement = document.getElementById('typewriter');
+        const texts = [
+            "Hello, I'm Ian Jay",
+            "Web Developer",
+            "Creative Designer",
+            "BSIS Student at CNSC"
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeWriter() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = 100;
+
+            if (isDeleting) {
+                typeSpeed = 50;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeWriter, typeSpeed);
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(typeWriter, 500);
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'light' ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+        });
+
+        // Glitter Rain Animation with H1 Catching Effect
+        const colorToggle = document.getElementById('colorToggle');
+        const glitterContainer = document.getElementById('glitterContainer');
+        const heroH1 = document.querySelector('.hero-content h1');
+
+        colorToggle.addEventListener('click', () => {
+            glitterContainer.classList.add('active');
+            
+            // Get H1 position
+            const h1Rect = heroH1.getBoundingClientRect();
+            
+            for (let i = 0; i < 150; i++) {
+                const glitter = document.createElement('div');
+                glitter.classList.add('glitter');
+                const startX = Math.random() * 100;
+                glitter.style.left = startX + '%';
+                
+                const duration = Math.random() * 1 + 1.5;
+                glitter.style.animationDuration = duration + 's';
+                glitter.style.animationDelay = Math.random() * 2 + 's';
+                
+                // Different shades for realistic rain
+                const colors = [
+                    'linear-gradient(180deg, #ffff(5, 96, 156, 0.9), transparent)',
+                    'linear-gradient(180deg, #ffff(235, 16, 118, 0.9), transparent)',
+                    'linear-gradient(180deg, #ffff(153, 11, 11, 0.8), transparent)',
+                    'linear-gradient(180deg, rgba(200, 230, 255, 0.85), transparent)'
+                ];
+                glitter.style.background = colors[Math.floor(Math.random() * colors.length)];
+                
+                // Vary the height for more realistic rain
+                const height = Math.random() * 15 + 15;
+                glitter.style.height = height + 'px';
+                
+                glitterContainer.appendChild(glitter);
+                
+                // Check collision with H1
+                setTimeout(() => {
+                    checkRainCollision(glitter, h1Rect);
+                }, parseFloat(glitter.style.animationDelay.replace('s', '')) * 1000);
+            }
+
+            setTimeout(() => {
+                glitterContainer.classList.remove('active');
+                glitterContainer.innerHTML = '';
+            }, 5000);
+        });
+
+        function checkRainCollision(rainDrop, h1Rect) {
+            const checkInterval = setInterval(() => {
+                if (!glitterContainer.classList.contains('active')) {
+                    clearInterval(checkInterval);
+                    return;
+                }
+                
+                const rainRect = rainDrop.getBoundingClientRect();
+                
+                // Check if rain hits the H1 text
+                if (
+                    rainRect.bottom >= h1Rect.top &&
+                    rainRect.top <= h1Rect.bottom &&
+                    rainRect.left >= h1Rect.left &&
+                    rainRect.right <= h1Rect.right
+                ) {
+                    // Rain caught! Create splash effect
+                    rainDrop.classList.add('caught');
+                    rainDrop.style.top = h1Rect.top + 'px';
+                    heroH1.classList.add('rain-hit');
+                    
+                    setTimeout(() => {
+                        heroH1.classList.remove('rain-hit');
+                    }, 300);
+                    
+                    clearInterval(checkInterval);
+                }
+            }, 50);
+            
+            // Stop checking after animation duration
+            setTimeout(() => {
+                clearInterval(checkInterval);
+            }, 4000);
+        }
+
+        // Realistic Bird Following Cursor
+        const twitterIcons = document.querySelectorAll('.twitter-icon');
+        const birdContainer = document.getElementById('birdContainer');
+        const realisticBird = document.getElementById('realisticBird');
+        let birdTimeout;
+        let isTracking = false;
+
+        function updateBirdPosition(e) {
+            if (!isTracking) return;
+            
+            const x = e.clientX;
+            const y = e.clientY;
+            
+            realisticBird.style.left = (x - 30) + 'px';
+            realisticBird.style.top = (y - 20) + 'px';
+        }
+
+        twitterIcons.forEach(icon => {
+            icon.addEventListener('mouseenter', (e) => {
+                birdContainer.classList.add('active');
+                isTracking = true;
+                
+                const rect = icon.getBoundingClientRect();
+                realisticBird.style.left = (rect.left - 30) + 'px';
+                realisticBird.style.top = (rect.top - 20) + 'px';
+                
+                document.addEventListener('mousemove', updateBirdPosition);
+
+                clearTimeout(birdTimeout);
+                birdTimeout = setTimeout(() => {
+                    birdContainer.classList.remove('active');
+                    isTracking = false;
+                    document.removeEventListener('mousemove', updateBirdPosition);
+                }, 10000);
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinksMenu = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinksMenu.classList.toggle('active');
+            const menuIcon = mobileMenu.querySelector('i');
+            menuIcon.className = navLinksMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+        });
+
+        navLinksMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksMenu.classList.remove('active');
+                mobileMenu.querySelector('i').className = 'fas fa-bars';
+            });
+        });
+
+        // Name Color Toggle (Rainbow)
+        const logo = document.querySelector('.logo');
+        const heroName = document.querySelector('.hero-content h1 .typewriter');
+
+        colorToggle.addEventListener('click', () => {
+            colorToggle.classList.toggle('active');
+            logo.classList.toggle('rainbow-name');
+            if (heroName) {
+                heroName.classList.toggle('rainbow-name');
+            }
+        });
+
+        // Contact Form
+         // Get references to the input fields
+    const inputs = [
+        document.getElementById('name'),
+        document.getElementById('email'),
+        document.getElementById('subject'),
+        document.getElementById('message')
+    ];
+
+    // Add keydown event to each input
+    inputs.forEach((input, index) => {
+        input.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // prevent form submission on Enter
+
+                if (this.value.trim() !== '') {
+                    // Move to next input if not the last one
+                    if (index + 1 < inputs.length) {
+                        inputs[index + 1].focus();
+                    } else {
+                        // Optionally, focus submit button or submit form
+                        document.getElementById('submitBtn').focus();
+                    }
+                }
+                // If blank, do nothing (stay on the field)
+            }
+        });
+    });
+
+    // Submit Button Handling
+    const submitBtn = document.getElementById('submitBtn');
+    submitBtn.addEventListener('click', () => {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (name && email && subject && message) {
+            alert('Thank you for your message! I will get back to you soon.');
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('subject').value = '';
+            document.getElementById('message').value = '';
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active Navigation Highlighting
+        const sections = document.querySelectorAll('.section, .hero');
+        const navigationLinks = document.querySelectorAll('.nav-links a');
+
+        function highlightActiveNav() {
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= sectionTop - 200) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navigationLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightActiveNav);
+        window.addEventListener('load', highlightActiveNav);
+  </script>
+</body>
+</html>
